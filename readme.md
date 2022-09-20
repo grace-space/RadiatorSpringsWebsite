@@ -2,6 +2,8 @@
 
 This is my website based on the Pixar movie Cars for the HTML/CSS/JavaScript SBA project.  
 
+You can access it from github pages [here](https://grace-space.github.io/RadiatorSpringsWebsite/html/home.html).
+
 There are three pages:  
 
 <ol>
