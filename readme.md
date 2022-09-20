@@ -16,7 +16,7 @@ There are three pages:
 
 The website is best viewed in Chrome.  
 
-Flexibility with different browser sizes were kept in mind when creating the webpages, but it is most compatible with Chrome through my testing.
+Flexibility with different browser sizes was kept in mind when creating the webpages, but it is most compatible with Chrome through my testing.
 
 The top menu navigation bar has a dropdown menu if you hover over `Residents` to fulfill the dropdown menu requirement.  
 
