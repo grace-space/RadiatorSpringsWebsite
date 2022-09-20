@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="site-section" id="site-section">
+      <header class="header">
+        <nav class="nav-bar">
+          <a href="home.html" id="navlogo">
+            <img src="../images/carslogo.png" alt="text logo" />
+          </a>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="">About</a>
+            </li>
+
+            <li class="nav-item-hide">
+              <a class="nav-link" href="">Residents</a>
+
+              <ul class="nav-dropdown">
+                <li><a href="">Lightning McQueen</a></li>
+                <li><a href="">Mater</a></li>
+                <li><a href="">Doc Hudson</a></li>
+                <li><a href="">Sally</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item-hide">
+              <a class="nav-link" href="">Account</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-section">
+        <section id="welcome">
+          <h1>Welcome to Radiator Springs!</h1>
+          <div class="slides-container">
+            <div class="slides fade">
+              <img src="../images/radiatorsprings.jpg" alt="radiatorsprings" />
+            </div>
+
+            <div class="slides fade">
+              <img
+                src="../images/radiatorsprings3.jpg"
+                alt="radiatorsprings3"
+              />
+            </div>
+
+            <div class="slides fade">
+              <img
+                src="../images/radiatorspringsnight.jpg"
+                alt="radiatorspringsnight"
+              />
+            </div>
+
+            <div class="slides fade">
+              <img
+                src="../images/radiatorsprings2.webp"
+                alt="radiatorsprings2"
+              />
+            </div>
+
+            <a class="prev" onclick="changeSlides(-1)">&#171;</a>
+            <a class="next" onclick="changeSlides(1)">&#187;</a>
+          </div>
+
+          <div class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+            reprehenderit quos, corrupti consequuntur minima vel qui nisi,
+            quaerat eaque, at molestiae deserunt soluta odio quae laborum
+            laudantium cupiditate sed debitis? Error distinctio dolor ab ducimus
+            maxime ea minima beatae rerum nemo. Excepturi odit neque deleniti
+            voluptas est odio at dicta culpa, quibusdam tempora atque sunt
+            reiciendis fugiat, recusandae quam, enim nemo ratione facilis. Totam
+            incidunt, molestias est ipsa nam in? Tempore illum ipsa
+            perspiciatis. Molestiae sint harum neque incidunt iusto, ea iure!
+            Tempora fuga eligendi repellendus suscipit sint sed vitae nesciunt
+            facilis laboriosam, aspernatur, soluta quisquam odit libero natus
+            nam!
+          </p>
+        </section>
+
+        <section id="characters">
+          <h2>The Residents</h2>
+
+          <div class="characters-container">
+            <a href="">
+              <div class="characterprofile">
+                <img src="../images/mcqueen.webp" alt="mcqueen" />
+                <h4>Lightning McQueen</h4>
+                <p>"Ka-Chow!"</p>
+              </div></a
+            >
+            <a href="">
+              <div class="characterprofile">
+                <img src="../images/mater2.webp" alt="mater" />
+                <h4>Mater</h4>
+                <p>"Yeah, like 'Tuh-Mater', but without the 'Tuh'!"</p>
+              </div></a
+            >
+            <a href="">
+              <div class="characterprofile">
+                <img src="../images/doc.webp" alt="doc" />
+                <h4>Doc Hudson</h4>
+                <p>
+                  "These are good folk around here who care about one another. I
+                  don’t want them depending on someone they can’t count on."
+                </p>
+              </div></a
+            >
+            <a href="">
+              <div class="characterprofile">
+                <img src="../images/sally.jpg" alt="sally" />
+                <h4>Sally</h4>
+                <p>
+                  "Don't fear failure. Be afraid of not having the chance; you
+                  have the chance!"
+                </p>
+              </div></a
+            >
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+            amet! Eveniet beatae ex eos, numquam quam provident fuga eligendi
+            tempore voluptatem! Pariatur et quam sapiente ab accusamus
+            necessitatibus sed commodi, neque ullam possimus, nam in tempore!
+            Sit ipsa nemo rerum maiores ratione, cum incidunt voluptatem harum,
+            rem quisquam iure dolores.
+          </p>
+
+          <div id="table-div">
+            <div id="table-container">
+              <table id="residents-table">
+                <tr>
+                  <th>Name</th>
+                  <th>Occupation</th>
+                  <th>Likes</th>
+                  <th>Dislikes</th>
+                </tr>
+                <tr>
+                  <td>Lightning McQueen</td>
+                  <td>Racer</td>
+                  <td>Winning, racing, his fan club & friends</td>
+                  <td>Losing, being covered in tar, crashes</td>
+                </tr>
+                <tr>
+                  <td>Mater</td>
+                  <td>Owner of Tow Mater Towing & Salvage</td>
+                  <td>Driving backwards, karate, ice cream</td>
+                  <td>Leaking oil, monsters, the dark, bullies</td>
+                </tr>
+                <tr>
+                  <td>Doc Hudson</td>
+                  <td>Doctor, Judge</td>
+                  <td>Racing, coaching, Radiator Springs</td>
+                  <td>Crashes, unsportsmanship behavior</td>
+                </tr>
+                <tr>
+                  <td>Sally</td>
+                  <td>Attorney</td>
+                  <td>The view from Wheel Well</td>
+                  <td>Bullies, her friends being hurt</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="socials">
+          <p id="footer-info">
+            Copyright &copy; 2022 Cars - All rights reserved.
+          </p>
+          <strong>Follow us on: </strong>
+          <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+          <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+        </div>
+
+        <div class="theme-container">
+          <p>Change background</p>
+          <div id="theme-toggle">
+            <i class="indicator"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/slides.js"></script>
+    <script src="../js/themetoggle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <div class="site-section" id="site-section">
+      <header class="header">
+        <nav class="nav-bar">
+          <a href="home.html" id="navlogo">
+            <img src="../images/carslogo.png" alt="text logo" />
+          </a>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="">About</a>
+            </li>
+
+            <li class="nav-item-hide">
+              <a class="nav-link" href="">Residents</a>
+
+              <ul class="nav-dropdown">
+                <li><a href="">Lightning McQueen</a></li>
+                <li><a href="">Mater</a></li>
+                <li><a href="">Doc Hudson</a></li>
+                <li><a href="">Sally</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item-hide">
+              <a class="nav-link" href="">Account</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-section">
+        <div id="left-content">
+          <h2>Welcome back!</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            sunt officiis dolores fugiat deserunt consequatur repellat, sit
+            optio rem. Dignissimos.
+          </p>
+
+          <style type = text/css>
+            #left-content p {font-size: 0.94em;}
+            </style>
+
+          <img src="../images/mcqueen2.gif" />
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aperiam
+            ullam pariatur sint quos dolore molestiae consequuntur iusto? Natus
+            illo voluptas praesentium alias reiciendis ad labore numquam,
+            sapiente nihil asperiores unde dolores sunt repudiandae eius fuga
+            laborum architecto similique id consequuntur tempora placeat
+            repellendus expedita delectus! Asperiores facere corrupti blanditiis
+            cum pariatur vel totam velit perspiciatis, quaerat voluptatum
+            dignissimos reprehenderit adipisci amet animi atque iusto dolorem
+            tempore aspernatur, optio delectus iure illum voluptates vero autem?
+            Optio officiis ratione error laboriosam iusto placeat architecto
+            porro natus laudantium, eos doloremque! Nulla ipsum possimus
+            praesentium incidunt aut voluptas quod voluptatibus minus porro
+            eligendi?
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            illum perspiciatis voluptate eius, fugiat optio id, provident vitae
+            ducimus doloremque alias quibusdam quis odio. Ex quibusdam expedita
+            quam non animi minus dicta voluptatem vitae aliquam!
+          </p>
+        </div>
+
+        <div id="login">
+          <div id="login-container">
+            <h1>Log in</h1>
+
+            <form id="form" action="home.html">
+              <div class="input-form">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" />
+                <div class="error"></div>
+              </div>
+              <div class="input-form">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" />
+                <div class="error"></div>
+              </div>
+
+              <button type="submit">log in</button>
+            </form>
+            <p>Not a member yet? Register <a href="register.html">here</a></p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="socials">
+          <p id="footer-info">
+            Copyright &copy; 2022 Cars - All rights reserved.
+          </p>
+          <strong>Follow us on: </strong>
+          <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+          <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+        </div>
+
+        <div class="theme-container">
+          <p>Change background</p>
+          <div id="theme-toggle">
+            <i class="indicator"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/themetoggle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+.main-section {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  min-height: 900px;
+}
+
+#left-content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+  padding-left: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+#left-content img {
+  align-self: center;
+  border-radius: 10px;
+  width: 80%;
+}
+
+/* added this into the HTML to achieve the inline CSS requirement */
+
+/* #left-content p {
+  font-size: 0.94em;
+} */
+
+#register {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#register-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second-color);
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+#register-container h1 {
+  color: var(--text-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#register-container p {
+  font-size: 0.75em;
+  color: var(--text-color);
+}
+
+#register-container a {
+  color: var(--text-color);
+}
+
+#register-container a:hover {
+  color: var(--third-color);
+  transition: 0.3s;
+}
+
+#register-form {
+  width: 65%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: trans;
+  color: var(--text-color);
+  font-size: 12px;
+}
+
+#register-form button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: #ffffff;
+  background-color: var(--fifth-color);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#register-form button:hover {
+  cursor: pointer;
+  opacity: 70%;
+  transition: 0.5s linear;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form label {
+  align-self: left;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.input-form input {
+  border: var(--second-color);
+  border-bottom: 1px solid var(--text-color);
+  box-shadow: none;
+  background: transparent;
+  outline: none;
+  display: block;
+  font-size: 12px;
+  padding: 8px 0;
+  width: 100%;
+  align-self: center;
+}
+
+.input-form input,
+textarea {
+  color: var(--text-color);
+}
+
+.input-form input:focus {
+  border-bottom: 1px solid var(--fifth-color);
+}
+
+.input-form.success input {
+  border-color: var(--fifth-color);
+}
+
+.input-form.error input {
+  border-color: var(--third-color);
+}
+
+.input-form .error {
+  color: var(--third-color);
+  font-size: 10px;
+  height: 13px;
+}
+
+#resident-select {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  padding: 7px 0px 7px 5px;
+  border: 1px solid var(--text-color);
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+#resident-select option {
+  color: var(--text-color);
+}
+
+#resident-select:focus {
+  border: 1px solid var(--text-color);
+  background-color: var(--second-color);
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 800px) {
+  .main-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #register {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  #left-content {
+    width: 100%;
+    padding-left: 0px;
+    padding-bottom: 50px;
+  }
+
+  #left-content p {
+    display: none;
+  }
+
+  #left-content h2 {
+    align-self: center;
+  }
+}

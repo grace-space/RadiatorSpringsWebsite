@@ -1,0 +1,274 @@
+.main-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 35px 150px 35px;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-section p {
+  padding: 0px 25px 0px 25px;
+  width: 100%;
+}
+
+#welcome h1 {
+  text-align: center;
+}
+
+.slides-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+.slides-container img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 100% 80%;
+  border-radius: 10px;
+}
+
+.slides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  top: 50%;
+  margin-top: -25px;
+  padding: 10px;
+  color: white;
+  font-size: 30px;
+  transition: 0.5s ease;
+}
+
+.prev {
+  border-radius: 0 10px 10px 0;
+  padding-right: 15px;
+}
+
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+  padding-left: 15px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.slide-dots {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bcbcbc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #919191;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.75s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#characters h2 {
+  text-align: center;
+}
+
+#characters a {
+  text-decoration: none;
+  color: black;
+}
+
+.characters-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.characterprofile {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.characterprofile:hover {
+  transform: scale(0.96, 0.96);
+  transition: 200ms linear;
+  box-shadow: none;
+}
+
+.characterprofile:hover img {
+  opacity: 100%;
+  transition: 300ms linear;
+}
+
+.characterprofile h4 {
+  font-weight: normal;
+  line-height: 1.19em;
+}
+
+.characterprofile p {
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 16px;
+}
+
+.characterprofile img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 35% 50%;
+  opacity: 90%;
+}
+
+#table-div {
+  display: flex;
+  justify-content: center;
+
+}
+
+#table-container {
+  display: block;
+  overflow-x: auto;
+  padding: 25px;
+
+}
+
+#residents-table {
+  margin-top: 25px;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: default;
+}
+
+#residents-table th:first-of-type {
+  border-top-left-radius: 10px;
+}
+
+#residents-table th:last-of-type {
+  border-top-right-radius: 10px;
+}
+
+#residents-table tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+
+#residents-table tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+
+#residents-table th {
+  font-size: 0.88em;
+  font-weight: normal;
+  background-color: var(--fifth-color);
+  color: white;
+  padding: 10px 10px 10px 10px;
+}
+
+#residents-table td {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 0.81em;
+  padding: 10px 10px 10px 10px;
+  color: #202020;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#residents-table tr:last-child td {
+  border: none;
+}
+
+#residents-table tr:hover td {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000000;
+}
+
+#residents-table td:nth-of-type(1) {
+  min-width: 155px;
+}
+
+#residents-table td:nth-of-type(2) {
+  min-width: 250px;
+}
+
+#residents-table td:nth-of-type(3) {
+  min-width: 245px;
+}
+
+#residents-table td:nth-of-type(4) {
+  min-width: 245px;
+}
+
+@media screen and (max-width: 720px) {
+  .characters-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+
+  .characterprofile {
+    width: 200px;
+    height: 267px;
+    padding-top: 20px;
+  }
+
+  .characters-container img {
+    width: 167px;
+    height: 167px;
+  }
+
+  .characterprofile h4 {
+    font-size: 0.81em;
+    line-height: 0px;
+  }
+
+  .characterprofile p {
+    font-size: 0.75em;
+    line-height: 13px;
+  }
+
+  #residents-table td {
+    font-size: 0.75em;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
