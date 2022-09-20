@@ -24,9 +24,9 @@
 
 /* added this into the HTML to achieve the inline CSS requirement */
 
-/* #left-content p {
+#left-content p {
   font-size: 0.94em;
-} */
+}
 
 #register {
   display: flex;
