@@ -1,4 +1,4 @@
-// we have to edit this whole below area
+// registration
 
 let usernameValid = false;
 let emailValid = false;
